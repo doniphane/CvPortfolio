@@ -10,6 +10,12 @@ body {
     color: #FFF;
     margin: 0;
     padding: 0;
+    
+}
+
+a{
+    list-style: none;
+    
 }
 
 html {
@@ -447,6 +453,33 @@ section {
     border-top: 2px solid #f39c12;
 }
 
+.hidden {
+    display: none;
+}
+
+#showMoreProjects {
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none;
+    transform: translate(30px);
+}
+
+#showMoreProjects:hover {
+    background-color: #FF6347;
+    transform: translateY(-2px);
+}
+
+#showMoreProjects:active {
+    transform: translateY(1px);
+}
+
 
 
 footer {
@@ -465,6 +498,8 @@ footer {
         gap: 0.5rem;
     }
 
+ 
+
     .menu-toggle {
         display: flex; 
     }
@@ -474,8 +509,11 @@ footer {
     }
 
     .hero-content {
+        display: flex;
+        justify-content: center;
         text-align: center;
         padding: 1rem;
+        font-size: 10px;
     }
 
     .hero img {
@@ -546,6 +584,7 @@ footer {
     .nav-menu a:hover {
         color: #FF4500;
     }
+    
     
 }
 

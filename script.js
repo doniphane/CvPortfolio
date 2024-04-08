@@ -75,3 +75,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+document.getElementById('showMoreProjects').addEventListener('click', function() {
+    var hiddenProjects = document.getElementById('hiddenProjects');
+    if (hiddenProjects.style.display === 'none' || hiddenProjects.style.display === '') {
+        hiddenProjects.style.display = 'block';
+    } else {
+        hiddenProjects.style.display = 'none';
+    }
+});
